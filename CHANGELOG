@@ -1,3 +1,6 @@
+*1.7.2* (September 21, 2014) - second commit
+  Updated all Prototype to 1.7.2, and broke it up to the _oop and _ajax versions
+
 *1.7* (September 21, 2014)
 
 Initial version based on *1.7* (November 16, 2010) 
