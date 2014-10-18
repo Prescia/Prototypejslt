@@ -1,0 +1,21 @@
+myClass= Class.create();
+myClass.prototype = {
+    _someVar: 0, // I like to leave variables starting with _
+    othervariable: true, // not mandatory
+    initialize: function(someParameterOnCreate) { // this is the constructor on prototypejs
+        this._someVar = someParameterOnCreate;
+        alert('yes, we are up!');
+    },
+    incSomeVar: function() { // this is how you declare functions
+        this._someVar++;
+    }
+}
+
+// Create instance (will alert 'yes, we are up!'):
+var myInstance = new myClass(5);
+// so this should alert "5":
+alert(myInstance._someVar);
+// call that function!
+myInstance.incSomeVar();
+// now it should alert "6":
+alert(myInstance._someVar);
