@@ -15,26 +15,6 @@ Sure good jQuery and other libraries might use proper closure, but there are 2 g
 1. You will never care if whatever other libraries can conflict with it
 2. What other libraries? if you just want a basic OO handling, you can have it with less than 40k, instead of almost 200k
 
-Here is a sample javascript to create your own object with properties and methors, just like on prototypejs:
+Check sample.txt for a sample script (remember, you will need to add the prototype_oop.js first in your HTML) 
 
-myClass= Class.create();
-myClass.prototype = {
-    _someVar: 0, // I like to leave variables starting with _
-    othervariable: true, // not mandatory
-    initialize: function(someParameterOnCreate) { // this is the constructor on prototypejs
-        this._someVar = someParameterOnCreate;
-        alert('yes, we are up!');
-    },
-    incSomeVar: function() { // this is how you declare functions
-        this._someVar++;
-    }
-}
 
-// Create instance (will alert 'yes, we are up!'):
-var myInstance = new myClass(5);
-// so this should alert "5":
-alert(myInstance._someVar);
-// call that function!
-myInstance.incSomeVar();
-// now it should alert "6":
-alert(myInstance._someVar);
